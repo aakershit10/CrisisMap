@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disaster Timeline - CrisisMap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">🚨 CrisisMap AI</div>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="sos.html">SOS</a>
+            <a href="report.html">Report</a>
+            <a href="volunteers.html">Volunteers</a>
+            <a href="timeline.html" class="active">Timeline</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Disaster Timeline</h1>
+        <p style="color: var(--text-muted); margin-bottom: 20px;">Live feed of all reported incidents and SOS triggers.</p>
+        
+        <div class="map-section" style="max-width: 800px;">
+            <ul id="timeline">
+                </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

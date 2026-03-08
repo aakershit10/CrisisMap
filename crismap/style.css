@@ -1,0 +1,114 @@
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f4f6fb;
+    }
+    
+    
+    /* HEADER */
+    
+    header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#1e2a38;
+    color:white;
+    padding:15px 30px;
+    }
+    
+    .logo{
+    font-size:22px;
+    font-weight:bold;
+    }
+    
+    nav a{
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+    font-weight:500;
+    }
+    
+    nav a:hover{
+    color:#ff4d4d;
+    }
+    
+    
+    /* DASHBOARD CARDS */
+    
+    .dashboard{
+    display:flex;
+    gap:20px;
+    padding:30px;
+    justify-content:center;
+    }
+    
+    .card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    width:180px;
+    text-align:center;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+    }
+    
+    .card h3{
+    margin-bottom:10px;
+    }
+    
+    .card p{
+    font-size:24px;
+    font-weight:bold;
+    }
+    
+    .card.red{
+    border-top:5px solid red;
+    }
+    
+    .card.orange{
+    border-top:5px solid orange;
+    }
+    
+    .card.green{
+    border-top:5px solid green;
+    }
+    
+    
+    /* MAP */
+    
+    .map-section{
+    padding:30px;
+    }
+    
+    #map{
+    height:500px;
+    width:100%;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.2);
+    }
+    /* QUICK REPORT SEARCH BAR */
+.quick-report-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.quick-report-bar input {
+    flex: 1;
+    padding: 14px 20px;
+    border: 2px solid #e5e7eb;
+    border-radius: 50px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s ease;
+    margin-bottom: 0; /* Overrides the default input margin */
+}
+
+.quick-report-bar input:focus {
+    border-color: var(--primary);
+}
+
+.quick-report-bar button {
+    border-radius: 50px;
+    padding: 14px 28px;
+    white-space: nowrap;
+}

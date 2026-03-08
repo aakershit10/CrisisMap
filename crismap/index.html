@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrisisMap  Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">🚨 CrisisMap </div>
+        <nav>
+            <a href="index.html" class="active">Dashboard</a>
+            <a href="sos.html">SOS</a>
+            <a href="report.html">Report</a>
+            <a href="volunteers.html">Volunteers</a>
+            <a href="timeline.html">Timeline</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="dashboard">
+            <div class="card">
+                <h3>Total Alerts</h3>
+                <p id="totalAlerts">0</p>
+            </div>
+            <div class="card red">
+                <h3>High Priority</h3>
+                <p id="highAlerts">0</p>
+            </div>
+            <div class="card orange">
+                <h3>Medium Priority</h3>
+                <p id="mediumAlerts">0</p>
+            </div>
+            <div class="card green">
+                <h3>Low Priority</h3>
+                <p id="lowAlerts">0</p>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <h2>Live Disaster Map</h2>
+            <div class="quick-report-bar">
+                <input type="text" id="quickReportInput" placeholder="Quick search/report... e.g., 'Flood in Delhi'">
+                <button onclick="submitQuickReport()">Add to Map</button>
+            </div>
+            <div id="map"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

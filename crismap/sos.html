@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS Emergency - CrisisMap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">🚨 CrisisMap AI</div>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="sos.html" class="active">SOS</a>
+            <a href="report.html">Report</a>
+            <a href="volunteers.html">Volunteers</a>
+            <a href="timeline.html">Timeline</a>
+        </nav>
+    </header>
+
+    <div class="container" style="text-align: center; margin-top: 50px;">
+        <h1 style="color: var(--danger); font-size: 36px;">🚨 Emergency SOS</h1>
+        <p style="color: var(--text-muted); margin-bottom: 40px;">Pressing this button will immediately broadcast your exact GPS coordinates as a High Priority alert.</p>
+        
+        <button class="sos" onclick="sendSOS()">Send SOS With Location</button>
+        
+        <p id="sosStatus" style="margin-top: 30px; font-size: 18px;"></p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

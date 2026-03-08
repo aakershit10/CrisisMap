@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Disaster - CrisisMap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">🚨 CrisisMap AI</div>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="sos.html">SOS</a>
+            <a href="report.html" class="active">Report</a>
+            <a href="volunteers.html">Volunteers</a>
+            <a href="timeline.html">Timeline</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Report a Disaster</h1>
+        <p style="color: var(--text-muted); margin-bottom: 20px;">Our AI will automatically parse your text for location and disaster severity.</p>
+        
+        <div class="map-section" style="max-width: 600px;">
+            <textarea id="message" placeholder="e.g., There is a huge fire in Mumbai near the central station"></textarea>
+            <br>
+            <input type="file" id="imageUpload">
+            <br>
+            <button onclick="submitReport()">Submit Report</button>
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

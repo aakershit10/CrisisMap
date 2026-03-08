@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Coordination - CrisisMap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">🚨 CrisisMap AI</div>
+        <nav>
+            <a href="index.html">Dashboard</a>
+            <a href="sos.html">SOS</a>
+            <a href="report.html">Report</a>
+            <a href="volunteers.html" class="active">Volunteers</a>
+            <a href="timeline.html">Timeline</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Volunteer Coordination</h1>
+        <p style="color: var(--text-muted); margin-bottom: 20px;">Join the effort to help those affected by ongoing crises.</p>
+        
+        <button onclick="addVolunteer()" style="margin-bottom: 30px;">Join as Volunteer</button>
+        
+        <div class="map-section" style="max-width: 800px;">
+            <ul id="volunteers">
+                </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
